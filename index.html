@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold text-center mb-6">Quiz App</h1>
+        <div id="quiz-container" class="space-y-4">
+            <!-- Quiz Questions will be dynamically injected here -->
+        </div>
+        <button id="next-button" class="w-full py-2 mt-6 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Next Question</button>
+        <div id="result" class="hidden mt-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Your Score</h2>
+            <p id="score" class="text-lg"></p>
+            <button id="restart-button" class="w-full py-2 mt-6 text-white bg-green-500 rounded-lg hover:bg-green-600">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
